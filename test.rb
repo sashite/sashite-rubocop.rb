@@ -7,7 +7,7 @@ require "yaml"
 
 actual = YAML.load_file("config/rubocop.yml")
 
-if actual.to_h != { "AllCops" => { "NewCops"=>"enable" }, "Layout/HashAlignment" => { "EnforcedHashRocketStyle" => "table", "EnforcedColonStyle" => "table" }, "Metrics/ClassLength" => { "Enabled"=>false }, "Naming/MemoizedInstanceVariableName" => { "EnforcedStyleForLeadingUnderscores"=>"required" }, "Style/ClassAndModuleChildren" => { "EnforcedStyle"=>"nested" }, "Style/EmptyMethod" => { "EnforcedStyle"=>"expanded" }, "Style/SymbolArray" => { "Enabled"=>true }, "Style/StringLiterals" => { "EnforcedStyle"=>"double_quotes" } }
+if actual.to_h != { "AllCops" => { "Exclude" => ["vendor/**/*.rb"], "NewCops" => "enable" }, "Layout/HashAlignment" => { "EnforcedHashRocketStyle" => "table", "EnforcedColonStyle" => "table" }, "Metrics/ClassLength" => { "Enabled"=>false }, "Naming/MemoizedInstanceVariableName" => { "EnforcedStyleForLeadingUnderscores"=>"required" }, "Style/ClassAndModuleChildren" => { "EnforcedStyle"=>"nested" }, "Style/EmptyMethod" => { "EnforcedStyle"=>"expanded" }, "Style/SymbolArray" => { "Enabled"=>true }, "Style/StringLiterals" => { "EnforcedStyle"=>"double_quotes" } }
   raise
 end
 
