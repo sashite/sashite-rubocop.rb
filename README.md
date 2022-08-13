@@ -14,7 +14,7 @@ At Sashité, many of our services are built on Ruby.
 
 To keep the code base consistent across projects, we have collected here the common style rules we use to improve readability and maintainability.
 
-![A chessboard, with a cop, a pawn and some Ruby](https://github.com/sashite/sashite-rubocop/raw/main/img/a-chessboard-with-a-cop-a-pawn-and-some-ruby.svg)
+![A chessboard, with a cop, a pawn and some Ruby](https://github.com/sashite/sashite-rubocop.rb/raw/main/img/a-chessboard-with-a-cop-a-pawn-and-some-ruby.svg)
 
 ## Installation
 
@@ -73,13 +73,13 @@ Add these lines to your `.rubocop.yml`:
 ```yaml
 # .rubocop.yml
 inherit_from:
-  - https://raw.githubusercontent.com/sashite/sashite-rubocop/main/config/rubocop.yml
-  - https://raw.githubusercontent.com/sashite/sashite-rubocop/main/config/rubocop/performance.yml
-  - https://raw.githubusercontent.com/sashite/sashite-rubocop/main/config/rubocop/rails.yml
-  - https://raw.githubusercontent.com/sashite/sashite-rubocop/main/config/rubocop/rake.yml
-  - https://raw.githubusercontent.com/sashite/sashite-rubocop/main/config/rubocop/rspec.yml
-  - https://raw.githubusercontent.com/sashite/sashite-rubocop/main/config/rubocop/sequel.yml
-  - https://raw.githubusercontent.com/sashite/sashite-rubocop/main/config/rubocop/thread_safety.yml
+  - https://raw.githubusercontent.com/sashite/sashite-rubocop.rb/main/config/rubocop.yml
+  - https://raw.githubusercontent.com/sashite/sashite-rubocop.rb/main/config/rubocop/performance.yml
+  - https://raw.githubusercontent.com/sashite/sashite-rubocop.rb/main/config/rubocop/rails.yml
+  - https://raw.githubusercontent.com/sashite/sashite-rubocop.rb/main/config/rubocop/rake.yml
+  - https://raw.githubusercontent.com/sashite/sashite-rubocop.rb/main/config/rubocop/rspec.yml
+  - https://raw.githubusercontent.com/sashite/sashite-rubocop.rb/main/config/rubocop/sequel.yml
+  - https://raw.githubusercontent.com/sashite/sashite-rubocop.rb/main/config/rubocop/thread_safety.yml
 ```
 
 ## Versioning
