@@ -21,7 +21,7 @@ To keep the code base consistent across projects, we have collected here the com
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "sashite-rubocop", ">= 1.0.0.beta1"
+gem "sashite-rubocop"
 ```
 
 And then execute:
@@ -33,7 +33,7 @@ bundle install
 Or install it yourself as:
 
 ```sh
-gem install sashite-rubocop --pre
+gem install sashite-rubocop
 ```
 
 ## Usage
