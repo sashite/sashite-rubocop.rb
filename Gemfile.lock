@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sashite-rubocop (1.0.1)
+    sashite-rubocop (1.0.2)
       rubocop (~> 1.35.0)
       rubocop-performance (~> 1.14)
       rubocop-rails (~> 2.15)

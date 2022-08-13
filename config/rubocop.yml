@@ -1,6 +1,7 @@
 AllCops:
   Exclude:
     - vendor/**/*.rb
+    - vendor/bundle/**/*
 
   NewCops: enable
 
