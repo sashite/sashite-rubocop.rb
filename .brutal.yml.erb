@@ -1,0 +1,16 @@
+---
+header: |
+  #!/usr/bin/env ruby
+  # frozen_string_literal: true
+
+  require "yaml"
+
+subject: |
+  YAML.load_file("%{path}")
+
+contexts:
+  path:
+<%= Dir["config/**/*.yml"].map { |path| "    - #{path}" }.join("\n") %>
+
+actuals:
+  - "%{subject}.to_h"

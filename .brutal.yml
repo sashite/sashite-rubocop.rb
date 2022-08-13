@@ -1,0 +1,22 @@
+---
+header: |
+  #!/usr/bin/env ruby
+  # frozen_string_literal: true
+
+  require "yaml"
+
+subject: |
+  YAML.load_file("%{path}")
+
+contexts:
+  path:
+    - config/rubocop.yml
+    - config/rubocop/rails.yml
+    - config/rubocop/rspec.yml
+    - config/rubocop/performance.yml
+    - config/rubocop/rake.yml
+    - config/rubocop/sequel.yml
+    - config/rubocop/thread_safety.yml
+
+actuals:
+  - "%{subject}.to_h"
