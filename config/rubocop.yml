@@ -1,4 +1,7 @@
 AllCops:
+  Exclude:
+    - vendor/**/*.rb
+
   NewCops: enable
 
 Layout/HashAlignment:
