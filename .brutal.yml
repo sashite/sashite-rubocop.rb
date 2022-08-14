@@ -19,4 +19,4 @@ contexts:
     - config/rubocop/thread_safety.yml
 
 actuals:
-  - "%{subject}.to_h"
+  - "%{subject}.keys.sort"

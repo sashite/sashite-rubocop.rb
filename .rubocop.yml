@@ -1,11 +1,16 @@
 inherit_from: config/rubocop.yml
 
+AllCops:
+  Exclude:
+    - vendor/**/*.rb
+    - vendor/bundle/**/*
+
+  NewCops: enable
+  TargetRubyVersion: 2.7
+
 require:
   - rubocop-md
   - rubocop-rake
-
-AllCops:
-  TargetRubyVersion: 2.7
 
 Layout/LineLength:
   Exclude:

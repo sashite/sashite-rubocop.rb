@@ -13,4 +13,4 @@ contexts:
 <%= Dir["config/**/*.yml"].map { |path| "    - #{path}" }.join("\n") %>
 
 actuals:
-  - "%{subject}.to_h"
+  - "%{subject}.keys.sort"
