@@ -12,8 +12,8 @@ Rake::TestTask.new do |t|
 end
 
 RuboCop::RakeTask.new do |task|
-  task.requires << "rubocop-md"
-  task.requires << "rubocop-rake"
+  task.plugins << "rubocop-md"
+  task.plugins << "rubocop-rake"
 end
 
 Dir["tasks/**/*.rake"].each { |t| load t }

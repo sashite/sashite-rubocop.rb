@@ -51,8 +51,6 @@ inherit_gem:
     - config/rubocop/rails.yml
     - config/rubocop/rake.yml
     - config/rubocop/rspec.yml
-    - config/rubocop/sequel.yml
-    - config/rubocop/thread_safety.yml
 
 # Some files define `Exclude` for same cops. To merge the `Exclude` rules, add:
 inherit_mode:
@@ -78,8 +76,6 @@ inherit_from:
   - https://raw.githubusercontent.com/sashite/sashite-rubocop.rb/main/config/rubocop/rails.yml
   - https://raw.githubusercontent.com/sashite/sashite-rubocop.rb/main/config/rubocop/rake.yml
   - https://raw.githubusercontent.com/sashite/sashite-rubocop.rb/main/config/rubocop/rspec.yml
-  - https://raw.githubusercontent.com/sashite/sashite-rubocop.rb/main/config/rubocop/sequel.yml
-  - https://raw.githubusercontent.com/sashite/sashite-rubocop.rb/main/config/rubocop/thread_safety.yml
 ```
 
 ## Versioning

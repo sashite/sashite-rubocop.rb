@@ -1,4 +1,4 @@
-require: rubocop-rspec
+plugin: rubocop-rspec
 
 RSpec/ExampleLength:
   Enabled: false

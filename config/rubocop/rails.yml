@@ -1,4 +1,4 @@
-require: rubocop-rails
+plugin: rubocop-rails
 
 Rails/SkipsModelValidations:
   Enabled: false

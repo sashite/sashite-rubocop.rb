@@ -4,10 +4,10 @@ desc "Generate Brutal manifest"
 task :generate_brutal_yml do
   print "Generating .brutal.yml file... "
 
-  template = ::File.read(".brutal.yml.erb")
-  renderer = ::ERB.new(template)
+  template = File.read(".brutal.yml.erb")
+  renderer = ERB.new(template)
 
-  file = ::File.open(".brutal.yml", "w")
+  file = File.open(".brutal.yml", "w")
   file.write(renderer.result)
   file.close
 

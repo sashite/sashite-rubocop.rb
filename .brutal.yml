@@ -10,13 +10,11 @@ subject: |
 
 contexts:
   path:
-    - config/rubocop.yml
-    - config/rubocop/rails.yml
-    - config/rubocop/rspec.yml
     - config/rubocop/performance.yml
+    - config/rubocop/rails.yml
     - config/rubocop/rake.yml
-    - config/rubocop/sequel.yml
-    - config/rubocop/thread_safety.yml
+    - config/rubocop/rspec.yml
+    - config/rubocop.yml
 
 actuals:
   - "%{subject}.keys.sort"
